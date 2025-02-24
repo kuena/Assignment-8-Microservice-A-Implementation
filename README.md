@@ -159,7 +159,8 @@ If my teammate **Anthony** experiences issues:
 
 ## 🔗 GitHub Repository  
 📌 **Clone this project from GitHub:**  
-➡ **[GitHub Repo Link]** (Replace this with actual repo link)
+➡ **https://github.com/kuena/Assignment-8-Microservice-A-Implementation.git
+
 
 ---
 
