@@ -1,5 +1,5 @@
 import zmq
-import json
+
 
 context = zmq.Context()
 socket = context.socket(zmq.REQ)  # REQ = Request socket
@@ -12,8 +12,8 @@ socket.send_json(ratings_data)  # Send request
 response = socket.recv_json()  # Receive response
 print("Average Rating:", response.get("average", "Error"))
 
-#Example invalid test data
-# ratings_data = {"ratings": ["bad_data", 5, 7]}  # Invalid input
-# socket.send_json(ratings_data)  # Send request
-# response = socket.recv_json()  # Receive response
-# print(response)
+# Example invalid test data
+ratings_data = {"ratings": ["bad_data", 5, 7]}  # Invalid input
+socket.send_json(ratings_data)  # Send request
+response = socket.recv_json()  # Receive response
+print(response)
