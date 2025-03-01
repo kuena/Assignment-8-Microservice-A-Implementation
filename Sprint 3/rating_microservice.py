@@ -1,5 +1,5 @@
 import zmq
-import json
+
 
 def calculate_average(ratings):
     if not ratings or not all(isinstance(r, (int, float)) for r in ratings):
